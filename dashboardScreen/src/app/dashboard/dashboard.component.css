@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+}
+.header {
+    /* border: 1px solid red; */
+    height: 45px;
+    background: rgb(19, 19, 172);
+    overflow: hidden; 
+}
+body{
+    background-color: #cedddf;
+}
+.left-column {
+    float: left;
+    width: 18%; 
+    min-width: 15%;
+  text-align: center;
+    color: white;
+   height: 20px;
+   font-size: 20px;
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+.right-column {
+    float: right;
+    width: 4%; 
+    text-align: center;
+    color: white;
+
+    margin-top: 10px;
+}
+.right-column img {
+    background-color: white;
+    border-radius: 50%;
+}
+.dropdown {
+    /* border: 1px solid greenyellow; */
+    width: 98%;
+    margin-left: 1%;
+    height: 75px;
+    overflow: hidden;
+
+    background-color: #fffefc;
+
+    
+}
+.dropdown-column {
+    float: left;
+    width: 22%; 
+    text-align: right;
+    /* border: 2px solid red; */
+    height: 60px;
+    margin-left: 30px;
+    margin-top: 1px;
+    background-color: #fffefc;
+    color: black;
+}
+.dropdown-list {
+    margin: 5px 0;
+    height: 50px;
+    width: 55%;
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+   
+    border-bottom: 2px solid grey; 
+
+
+
+
+    appearance: none; /* CSS3 standard */
+    background-image: url('../../assets/image/images/downarrow.png'); 
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 15px 15px;
+
+   
+    
+}
+
+.selected-dropdown {
+    border-bottom: 4px solid blue;
+}
+
+.dropdown-list:hover {
+    margin: 5px 0;
+    height: 50px;
+    width: 55%;
+    background-color: whitesmoke;
+    color: black;
+    border-bottom : 3px solid red; 
+}
+
+
+
+
+
+
+.val {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; /* Adjust the gap between columns */
+    /* border: 1px solid greenyellow; */
+    width: 98%;
+    margin-left: 1%;
+    height: 60px;
+    overflow: hidden;
+    margin-top: 10px;
+    background-color: #fffefc;
+
+}
+
+.column {
+    flex: 1; /* Each column takes an equal portion of the available space */
+    /* border: 1px solid black; */
+    padding: 8px;
+    text-align: center;
+}
+
+.column #red {
+    color:  rgb(197, 29, 29);
+    font-weight: 600;
+}
+
+
+
+
+.parameter {
+    display: flex;
+    justify-content: space-between;
+   
+    gap: 10px; /* Adjust the gap between columns */
+    /* border: 1px solid greenyellow; */
+    width: 98%;
+    margin-left: 1%;
+    height: 120px;
+    overflow: hidden;
+    margin-top: 10px;
+    background-color: #fffefc;
+
+}
+.txt 
+{
+    margin: 15px;
+}
+
+.column1 {
+    flex: 1; /* Each column takes an equal portion of the available space */
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  
+
+}
+
+
+
+.graph {
+    display: flex;
+    justify-content: space-between;
+   
+    gap: 10px; /* Adjust the gap between columns */
+    /* border: 1px solid greenyellow; */
+    width: 98%;
+    margin-left: 1%;
+    height: 250px;
+    overflow: hidden;
+    margin-top: 10px;
+    background-color: #fffefc;
+
+}
+
+.column2 {
+    flex: 1; /* Each column takes an equal portion of the available space */
+    border: 1px solid black;
+   
+   
+    height: 100%;
+  
+
+}
+.progress{
+    position: relative;
+    /* margin: 4px; */
+    margin: 20%;
+    float:left;
+    text-align: center;
+  }
+  .barOverflow{ /* Wraps the rotating .bar */
+    position: relative;
+    overflow: hidden; /* Comment this line to understand the trick */
+    width: 90px; height: 45px; /* Half circle (overflow) */
+    margin-bottom: -14px; /* bring the numbers up */
+  }
+  .bar_voltage{
+    position: absolute;
+    top: 0; left: 0;
+    width: 90px; height: 90px; /* full circle! */
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 5px solid #eee;     /* half gray, */
+    border-bottom-color: #0bf;  /* half azure */
+    border-right-color: #0bf;
+    transform: rotate(180deg)
+  }
+  .bar_current{
+    position: absolute;
+    top: 0; left: 0;
+    width: 90px; height: 90px; /* full circle! */
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 5px solid #eee;     /* half gray, */
+    border-bottom-color: #0bf;  /* half azure */
+    border-right-color: #0bf;
+    transform: rotate(10deg)
+  }
+  .bar_power{
+    position: absolute;
+    top: 0; left: 0;
+    width: 90px; height: 90px; /* full circle! */
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 5px solid #eee;     /* half gray, */
+    border-bottom-color: #0bf;  /* half azure */
+    border-right-color: #0bf;
+    transform: rotate(120deg)
+  }
+  .bar_powerFactor{
+    position: absolute;
+    top: 0; left: 0;
+    width: 90px; height: 90px; /* full circle! */
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 5px solid #eee;     /* half gray, */
+    border-bottom-color: #0bf;  /* half azure */
+    border-right-color: #0bf;
+    transform: rotate(220deg)
+  }
+  .bar_freq{
+    position: absolute;
+    top: 0; left: 0;
+    width: 90px; height: 90px; /* full circle! */
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 5px solid #eee;     /* half gray, */
+    border-bottom-color: #0bf;  /* half azure */
+    border-right-color: #0bf;
+    transform: rotate(10deg)
+  }

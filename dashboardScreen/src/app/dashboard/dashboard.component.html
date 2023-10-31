@@ -1,0 +1,129 @@
+<div class="header">
+    <div class="left-column"><img src="../../assets/image/images/menu.png"> </div>
+    <div class="left-column">Energyviss/Live Dashboard</div>
+    <div class="right-column"><img src="../../assets/image/images/user.png"></div>
+    <div class="right-column"><img src="../../assets/image/images/alarm.png"></div>
+    <div class="right-column"><img src="../../assets/image/images/refresh.png"></div>
+</div>
+
+<div class="dropdown">
+    <div class="dropdown-column">
+        FLOOR:
+        <select class="dropdown-list" onchange="addBorder(this)">
+        
+            <option value="Floor 1"> 1</option>
+            <option value="Floor 2"> 2</option>
+            <option value="Floor 3"> 3</option>
+            <option value="Floor 4"> 4</option>
+            <option value="Floor 5"> 5</option>
+        </select>
+    </div>
+    <div class="dropdown-column">
+        SECTION:
+        <select class="dropdown-list" onchange="addBorder(this)">
+            <
+            <option value="Lab 1">Lab 1</option>
+            <option value="Lab 2">Lab 2</option>
+            <option value="Lab 3">Lab 3</option>
+            <option value="Lab 4">Lab 4</option>
+            <option value="Lab 5">Lab 5</option>
+        </select>
+    </div>
+    <div class="dropdown-column">
+        VIEW:
+        <select class="dropdown-list" onchange="addBorder(this)">
+            <option value="View 1"> Individual</option>
+            <option value="View 2"> Visual</option>
+        </select>
+    </div>
+    <div class="dropdown-column">
+        METER:
+        <select class="dropdown-list" onchange="addBorder(this)">
+            <option value="Meter 1">Meter 1</option>
+            <option value="Meter 2">Meter 2</option>
+            <option value="Meter 3">Meter 3</option>
+            <option value="Meter 4">Meter 4</option>
+            <option value="Meter 5">Meter 5</option>
+        </select>
+    </div>
+</div>
+
+<div class="val">
+   
+    <div class="column">ENERGY : <span style="color: red;">156.610 kWh</span></div>
+    <div class="column">LAST UPDATE : <span style="color: red;">22/06/2021  12:07pm</span></div>
+    <div class="column">NEXT HOUR PREDICTED ENERGY : <span style="color: red;">157,393.05 kWh</span></div>
+
+</div>
+
+<div class="parameter">
+    <div class="txt">KEY PARAMETERS</div>
+
+    <div class="column1">         
+        <div class="progress">
+            <div class="barOverflow">
+              <div class="bar_voltage"></div>
+            </div>
+            <span>100</span><br>
+            <span>voltage</span>
+          </div>
+    
+    </div>
+    <div class="column1">             
+        <div class="progress">
+            <div class="barOverflow">
+              <div class="bar_current"></div>
+            </div>
+            <span>13</span><br>
+            <span>current</span>
+          </div>    
+    </div>
+    <div class="column1">            
+        
+        <div class="progress">
+            <div class="barOverflow">
+              <div class="bar_power"></div>
+            </div>
+            <span>50</span><br>
+            <span>power</span>
+          </div></div>
+    <div class="column1">            
+        <div class="progress">
+            <div class="barOverflow">
+              <div class="bar_powerFactor"></div>
+            </div>
+            <span>400</span><br>
+            <span>power factor </span>
+          </div>    
+    </div>
+    <div class="column1">            
+        <div class="progress">
+            <div class="barOverflow">
+              <div class="bar_freq"></div>
+            </div>
+            <span>10</span><br>
+            <span>frequency</span>
+          </div>    
+    </div>
+    
+  
+</div>
+
+<div class="graph">
+
+
+    <div class="column2"> 
+        <ag-charts-angular
+        style="height: 100%"
+        [options]="options"
+        ></ag-charts-angular> 
+    </div>
+    <div class="column2">
+        <ag-charts-angular
+        style="height: 100%"
+        [options]="optionsk"
+        ></ag-charts-angular>     
+    </div>
+
+   </div>
+ 
